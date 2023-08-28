@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//colocar f nos números também ajuda a não dar erro no código, para não precisar usar o lf na variável.
+
 int main(){
     double ip;
 
@@ -10,13 +12,13 @@ int main(){
     if(ip>=0.05 && ip<=0.29){
         puts("O índice de poluição está aceitável.");
 
-    } else if(ip == 0.3){
+    } else if(ip>=0.3 && ip<=0.4){
         puts("As indústrias do primeiro grupo precisam suspender suas atividades.");
 
-    } else if(ip == 0.4){
+    } else if(ip>=0.4 && ip<=0.5){
         puts("As indústrias do primeiro e segundo grupo precisam suspender suas atividades.");
 
-    } else if(ip == 0.5){
+    } else if(ip>=0.5){
         puts("Todos os grupos precisam suspender suas atividades.");
 
     } else{
@@ -24,5 +26,3 @@ int main(){
     }
     
 }
-
-//colocar f nos números também ajuda a não dar erro no código, para não precisar usar o lf na variável.
