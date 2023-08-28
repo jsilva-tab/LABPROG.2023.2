@@ -24,3 +24,5 @@ int main(){
     }
     
 }
+
+//colocar f nos números também ajuda a não dar erro no código, para não precisar usar o lf na variável.
