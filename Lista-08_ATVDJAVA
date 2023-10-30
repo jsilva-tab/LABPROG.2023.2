@@ -1,0 +1,25 @@
+public class Indicadores {
+    private int indicador1;
+    private int indicador2;
+    private int indicador3;
+
+    public Indicadores(int indicador1, int indicador2, int indicador3) {
+        this.indicador1 = indicador1;
+        this.indicador2 = indicador2;
+        this.indicador3 = indicador3;
+    }
+
+    public void imprimirIndicadores() {
+        System.out.println("Indicador 1: " + indicador1);
+        System.out.println("Indicador 2: " + indicador2);
+        System.out.println("Indicador 3: " + indicador3);
+    }
+}
+
+public class ExecutarValores {
+    public static void main(String[] args) {
+        Indicadores indicadores = new Indicadores(10, 20, 30);
+
+        indicadores.imprimirIndicadores();
+    }
+}
